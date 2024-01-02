@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import FirstContent from "./Body/FirstContent";
+import Reveal from "../component/Reveal";
 
 export default function Main() {
   return (
