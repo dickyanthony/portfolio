@@ -69,32 +69,3 @@ const AnimateTextArrow = (props) => {
 };
 
 export default AnimateTextArrow;
-{
-  /* <motion.div
-style={{
-  width: 150,
-  height: 150,
-  borderRadius: 30,
-  backgroundColor: "rgba(255,255,255,0.5)",
-  cursor: "pointer",
-}}
-onHover={() => setVisible(!isVisible)}
->
-<AnimatePresence>
-  {isVisible && (
-    <motion.div
-      style={{
-        width: 80,
-        height: 80,
-        borderRadius: 15,
-        backgroundColor: "#fff",
-        margin: 35,
-      }}
-      initial={{ opacity: 0, scale: 0.75 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0 }}
-    />
-  )}
-</AnimatePresence>
-</motion.div> */
-}

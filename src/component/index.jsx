@@ -1,6 +1,13 @@
-import Title from "./Title";
+import { Title, PrimaryTitle } from "./Title";
 import Description from "./Description";
 import ItemHeader from "./ItemHeader";
 import AnimateTextArrow from "./AnimateTextArrow";
-
-export { Title, Description, ItemHeader, AnimateTextArrow };
+import Reveal from "./Reveal";
+export {
+  Title,
+  PrimaryTitle,
+  Description,
+  ItemHeader,
+  AnimateTextArrow,
+  Reveal,
+};
