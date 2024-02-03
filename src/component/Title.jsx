@@ -12,9 +12,7 @@ const Title = (props) => {
 const PrimaryTitle = (props) => {
   const { children, className } = props;
   return (
-    <div
-      className={`text-slate-50 font-bold text-5xl ${className} text-primary-text`}
-    >
+    <div className={` font-bold text-5xl  text-primary-text ${className}`}>
       {children}
     </div>
   );

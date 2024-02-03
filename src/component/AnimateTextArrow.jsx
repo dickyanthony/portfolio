@@ -14,12 +14,14 @@ const show = {
 };
 
 const AnimateTextArrow = (props) => {
-  const { text = "LEARN MORE" } = props;
+  const { text = "LEARN MORE", onClick } = props;
   const [onAnimate, setOnAnimate] = useState(true);
   const [style, setStyle] = useState(show);
+  const slate100Width = onAnimate ? "100%" : "100%";
+  const whiteWidth = onAnimate ? "100%" : "0%";
 
   return (
-    <div className="w-fit">
+    <div className="w-fit flex flex-1 hover:cursor-pointer" onClick={onClick}>
       <motion.div
         onMouseEnter={() => {
           setOnAnimate(true);
@@ -28,7 +30,7 @@ const AnimateTextArrow = (props) => {
         onMouseLeave={() => {
           setOnAnimate(false);
         }}
-        className="w-auto flex flex-row mt-4"
+        className="w-auto flex flex-row mt-4 mb-3 pr-1"
       >
         <Description className="text-white text-sm">{text}</Description>
         <AnimatePresence mode="wait" initial={false}>
@@ -39,31 +41,27 @@ const AnimateTextArrow = (props) => {
                 ? {
                     translateX: 5,
                     opacity: 1,
-                    duration: 0.7,
-                    delay: 0.7,
                   }
                 : undefined
             }
-            exit={{ translateX: 0, opacity: 1, duration: 0.7, delay: 0.7 }}
+            exit={{ translateX: 0, opacity: 1 }}
             className="flex flex-1 text-white items-center ml-2"
           >
             <FaArrowRight />
           </motion.div>
         </AnimatePresence>
       </motion.div>
+
       <motion.div
-        className={"w-full bg-white mt-2 h-1 opacity-50"}
-        key={onAnimate}
-        animate={
-          onAnimate
-            ? {
-                opacity: 1,
-                duration: 0.7,
-                delay: 0.7,
-              }
-            : undefined
-        }
-      ></motion.div>
+        className="w-full bg-slate-100 mt-3 h-1 opacity-50 absolute bottom-0 "
+        initial={{ width: slate100Width }}
+        animate={{ width: slate100Width, duration: 0.7, delay: 0.7 }}
+      />
+      <motion.div
+        className="w-full bg-white mt-3 h-1 opacity-100 absolute bottom-0"
+        initial={{ width: whiteWidth }}
+        animate={{ width: whiteWidth, duration: 0.7, delay: 0.7, zIndex: 2 }}
+      />
     </div>
   );
 };
