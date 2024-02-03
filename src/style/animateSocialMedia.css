@@ -1,0 +1,6 @@
+.item {
+  transition: 0.3s;
+}
+.containerSocialMedia:hover > :not(:hover) {
+  opacity: 0.4;
+}
