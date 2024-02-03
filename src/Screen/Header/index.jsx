@@ -1,27 +1,20 @@
 import React from "react";
-import { ItemHeader } from "../../component";
+import { ItemHeader, NavDesktop, NavMobile } from "../../component";
 
 const itemHeader = [
-  { id: 1, title: "Home" },
-  { id: 2, title: "About" },
-  { id: 3, title: "Contact" },
+  { id: 1, title: "Home", onClick: () => {} },
+  { id: 2, title: "About", onClick: () => {} },
+  { id: 3, title: "Contact", onClick: () => {} },
 ];
 
-function Header() {
+export default function Header() {
   return (
-    <div className="w-full max-w-screen-xl h-20 flex flex-row mt-2">
-      <div className="justify-start flex flex-1 align-middle text-center">
-        <div className="text-white self-center font-bold text-[28px]">
-          Developer
-        </div>
-      </div>
-      <div className="flex flex-row self-center">
-        {itemHeader.map((item) => (
-          <ItemHeader key={item.id} item={item} />
-        ))}
-      </div>
+    <div className="w-full max-w-screen-xl h-20 flex flex-row mt-2 z-20">
+      <nav className="container flex items-center justify-between py-1 lg:py-5">
+        <span className="text-lg">⚡️</span>
+        <NavMobile item={itemHeader} />
+        <NavDesktop item={itemHeader} />
+      </nav>
     </div>
   );
 }
-
-export default Header;

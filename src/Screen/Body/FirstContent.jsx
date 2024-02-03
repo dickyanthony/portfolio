@@ -55,7 +55,7 @@ const RightView = () => {
 
 function FirstContent() {
   return (
-    <div className="container mx-auto max-w-screen-xl h-auto ">
+    <div className="container mx-auto max-w-screen-xl h-auto z-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-start mt-20">
         <LeftView />
         <RightView />
