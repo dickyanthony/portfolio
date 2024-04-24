@@ -16,13 +16,13 @@ const LeftView = () => {
         <Title className="text-7xl tracking-widest">{TITLE}</Title>
       </Reveal>
       <Reveal>
-        <PrimaryTitle className="text-6xl mt-4 tracking-widest">
+        <PrimaryTitle className="text-6xl mt-2 tracking-widest">
           <span>A </span>
           {TITLE_ROLE}
         </PrimaryTitle>
       </Reveal>
       <Reveal>
-        <Description className="mt-10">{TITLE_DESC}</Description>
+        <Description className="mt-5 ">{TITLE_DESC}</Description>
       </Reveal>
     </div>
   );
@@ -61,9 +61,9 @@ const RightView = () => {
   );
 };
 
-function FirstContent() {
+function SecondContent() {
   return (
-    <div className="container mx-auto max-w-screen-xl h-auto z-10">
+    <div className="container mx-auto  h-auto z-10 ">
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 text-start mt-20 xl:flex-col-reverse">
         <LeftView />
         <RightView />
@@ -72,4 +72,4 @@ function FirstContent() {
   );
 }
 
-export default FirstContent;
+export default SecondContent;

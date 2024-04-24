@@ -9,7 +9,7 @@ export default function NavDesktop(props) {
           <li className="item">
             <a
               href={onClick}
-              className="flex items-center gap-1 text-slate-100"
+              className="flex text-lg font-semibold items-center gap-1 text-slate-100 hover:cursor-pointer"
             >
               {/* <Icon /> */}
               {title}

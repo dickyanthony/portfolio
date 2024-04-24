@@ -1,9 +1,9 @@
 import React from "react";
 
 const Description = (props) => {
-  const { children, className } = props;
+  const { children, className, style } = props;
   return (
-    <div className={`text-[#c3cad5] tracking-wide ${className}`}>
+    <div style={style} className={`text-[#c3cad5] tracking-wide ${className}`}>
       {children}
     </div>
   );

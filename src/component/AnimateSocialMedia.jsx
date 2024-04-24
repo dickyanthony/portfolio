@@ -32,7 +32,7 @@ const AnimateSocialMedia = (props) => {
   return (
     <div className={`${className} w-full`}>
       <Title className="text-sm">{title}</Title>
-      <div className="flex flex-1 flex-row mt-2 gap-3 containerSocialMedia">
+      <div className="flex flex-1 flex-row mt-2 gap-5 containerSocialMedia">
         {showInstagram && (
           <PiInstagramLogoFill
             className="item text-sky-100 hover:cursor-pointer"
