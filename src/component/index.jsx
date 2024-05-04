@@ -6,6 +6,10 @@ import Reveal from "./Reveal";
 import AnimateSocialMedia from "./AnimateSocialMedia";
 import NavDesktop from "./NavDesktop";
 import NavMobile from "./NavMobie";
+import Experience from "./Experience";
+import Divider from "./Divider";
+import WrapCenter from "./WrapCenter";
+import Skills from "./Skills";
 export {
   Title,
   PrimaryTitle,
@@ -16,4 +20,8 @@ export {
   AnimateSocialMedia,
   NavDesktop,
   NavMobile,
+  Experience,
+  Divider,
+  WrapCenter,
+  Skills,
 };

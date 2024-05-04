@@ -1,21 +1,16 @@
 import React from "react";
-import { ItemHeader, NavDesktop, NavMobile } from "../../component";
-
-const itemHeader = [
-  { id: 1, title: "Home", onClick: () => {} },
-  { id: 2, title: "About", onClick: () => {} },
-  { id: 3, title: "Contact", onClick: () => {} },
-];
+import { NavDesktop, NavMobile } from "../../component";
+import { ITEM_HEADER } from "../../constant/Content";
 
 export default function Header() {
   return (
-    <div className="w-full max-w-screen-xl h-20 flex flex-row mt-2 z-20">
-      <nav className="container flex items-center justify-between py-1 lg:py-5">
+    <div className="container mx-auto max-w-screen-xl pb-12 pt-12 lg:pr-10 lg:pl-10 flex flex-row justify-center content-center max-[1249px]:pb-4">
+      <nav className="flex container items-center justify-between py-1 lg:py-5">
         <span className="text-3xl text-white font-bold tracking-wider">
           Dicky.
         </span>
-        <NavMobile item={itemHeader} />
-        <NavDesktop item={itemHeader} />
+        <NavMobile item={ITEM_HEADER} />
+        <NavDesktop item={ITEM_HEADER} />
       </nav>
     </div>
   );

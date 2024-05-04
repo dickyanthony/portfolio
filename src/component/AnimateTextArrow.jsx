@@ -25,7 +25,7 @@ const AnimateTextArrow = (props) => {
     ...descriptionStyle
   } = props;
   const [onAnimate, setOnAnimate] = useState(false);
-  const [style, setStyle] = useState(show);
+
   const slate100Width = onAnimate ? "100%" : "100%";
   const whiteWidth = onAnimate ? "100%" : "0%";
 
@@ -34,7 +34,6 @@ const AnimateTextArrow = (props) => {
       <motion.div
         onMouseEnter={() => {
           setOnAnimate(true);
-          setStyle(show);
         }}
         onMouseLeave={() => {
           setOnAnimate(false);

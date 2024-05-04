@@ -11,7 +11,7 @@ import Reveal from "../../component/Reveal";
 
 const LeftView = () => {
   return (
-    <div className="px-5 order-2 xl:order-1">
+    <div className=" order-2 xl:order-1">
       <Reveal>
         <Title className="text-7xl tracking-widest">{TITLE}</Title>
       </Reveal>
@@ -30,7 +30,7 @@ const LeftView = () => {
 
 const RightView = () => {
   return (
-    <div className="flex px-5 order-1 xl:order-2 justify-center">
+    <div className="flex  order-1 xl:order-2 justify-center">
       {/* <div className="w-3/6"> */}
       <img
         alt="profile"
@@ -63,7 +63,7 @@ const RightView = () => {
 
 function SecondContent() {
   return (
-    <div className="container mx-auto  h-auto z-10 ">
+    <div className="container mx-auto h-auto z-10 ">
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 text-start mt-20 xl:flex-col-reverse">
         <LeftView />
         <RightView />
