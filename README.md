@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# Dicky's Portofolio : Created with ReactJS, Tailwind CSS and Framer-motion🌟
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For Demo and Final Code checkout following link👇: <br />
+[React JS Portfolio Website](https://portfolio-bf4o0tuij-dickyanthonys-projects.vercel.app/) <br />
+
+### Images of The Portfolio Website:
+
+![ReactJS Portfolio Website](https://github.com/dickyanthony/portfolio/blob/main/src/assets/images/home-screen.png)<br />
+![ReactJS Portfolio Website](https://github.com/dickyanthony/portfolio/blob/main/src/assets/images/experience-screen.png)<br />
+![ReactJS Portfolio Website](https://github.com/dickyanthony/portfolio/blob/main/src/assets/images/skill-screen.png)<br />
+
+# Getting Started with Create React App
 
 ## Available Scripts
 
