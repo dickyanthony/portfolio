@@ -35,42 +35,42 @@ const AnimateSocialMedia = (props) => {
       <div className="flex flex-1 flex-row mt-2 gap-5 containerSocialMedia">
         {showInstagram && (
           <PiInstagramLogoFill
-            className="item text-sky-100 hover:cursor-pointer"
+            className="item text-sky-100 hover:cursor-pointer hover:scale-125"
             size={size}
             onClick={onClickInstagram}
           />
         )}
         {showLinkedin && (
           <PiLinkedinLogoFill
-            className="item text-sky-100 hover:cursor-pointer"
+            className="item text-sky-100 hover:cursor-pointer hover:scale-125"
             size={size}
             onClick={onClickLinkedin}
           />
         )}
         {showFacebook && (
           <PiFacebookLogoFill
-            className="item text-sky-100 hover:cursor-pointer"
+            className="item text-sky-100 hover:cursor-pointer hover:scale-125"
             size={size}
             onClick={onClickFacebook}
           />
         )}
         {showTwitter && (
           <PiTwitterLogoFill
-            className="item text-sky-100 hover:cursor-pointer"
+            className="item text-sky-100 hover:cursor-pointer hover:scale-125"
             size={size}
             onClick={onClickTwitter}
           />
         )}
         {showGithub && (
           <PiGithubLogoFill
-            className="item text-sky-100 hover:cursor-pointer"
+            className="item text-sky-100 hover:cursor-pointer hover:scale-125"
             size={size}
             onClick={onClickGithub}
           />
         )}
         {showYoutube && (
           <PiYoutubeLogoFill
-            className="item text-sky-100 hover:cursor-pointer"
+            className="item text-sky-100 hover:cursor-pointer hover:scale-125"
             size={size}
             onClick={onClickYoutube}
           />

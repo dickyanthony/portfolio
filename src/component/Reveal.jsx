@@ -3,7 +3,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import { color } from "../utils";
 
 const Reveal = (props) => {
-  const { children, width = "fit-content" } = props;
+  const { children, width = "fit-content", overflow = "hidden" } = props;
   const ref = useRef(null);
   const mainControls = useAnimation();
   const slideControls = useAnimation();
@@ -17,7 +17,7 @@ const Reveal = (props) => {
   }, [isInView]);
 
   return (
-    <div ref={ref} style={{ position: "relative", overflow: "hidden", width }}>
+    <div ref={ref} style={{ position: "relative", overflow: overflow, width }}>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },

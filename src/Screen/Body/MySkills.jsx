@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { Reveal, Skills, Title } from "../../component";
 import html from "../../assets/images/html.svg";
 import js from "../../assets/images/js.svg";
 import react from "../../assets/images/react.svg";
 import express from "../../assets/images/express.svg";
 import typescript from "../../assets/images/typescript.svg";
-import { useState } from "react";
-
+import NextArrow from "../../assets/images/arrow-next.svg";
+import PrevArrow from "../../assets/images/arrow-prev.svg";
 const SKILL_MAP = [
   {
     img: html,
@@ -86,18 +87,28 @@ export default function MySkills() {
               My extensive list of skills
             </Title>
             <div className="flex flex-row">
-              <div
-                className="w-10 h-10 rounded-full bg-[#075fe4] content-center text-white text-2xl mr-4 hover:cursor-pointer sm:w-20 sm:h-20"
+              <motion.div
+                whileHover={{
+                  backgroundColor: "#075fe4",
+                  scale: 0.8,
+                }}
+                initial={{ backgroundColor: "#2d343f" }}
+                className="w-10 h-10 rounded-full flex justify-center content-center text-white text-2xl mr-4 hover:cursor-pointer sm:w-20 sm:h-20"
                 onClick={prevSkill}
               >
-                &lt;
-              </div>
-              <div
-                className="w-10 h-10 rounded-full bg-[#075fe4] content-center text-white text-2xl hover:cursor-pointer sm:w-20 sm:h-20"
+                <img src={PrevArrow} alt="prev" width={50} height={50} />
+              </motion.div>
+              <motion.div
+                whileHover={{
+                  backgroundColor: "#075fe4",
+                  scale: 0.8,
+                }}
+                initial={{ backgroundColor: "#2d343f" }}
+                className="w-10 h-10 rounded-full flex justify-center content-center text-white text-2xl mr-4 hover:cursor-pointer sm:w-20 sm:h-20"
                 onClick={nextSkill}
               >
-                &gt;
-              </div>
+                <img src={NextArrow} alt="next" width={50} height={50} />
+              </motion.div>
             </div>
           </div>
         </Reveal>

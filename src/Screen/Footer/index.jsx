@@ -20,7 +20,7 @@ export default function Footer() {
             <Reveal>
               <img
                 alt="profile"
-                style={{ borderRadius: "50%", width: "142px", height: "142px" }}
+                style={{ borderRadius: "50%", width: "136px", height: "136px" }}
                 src={require("../../assets/images/profile.png")}
               />
             </Reveal>
@@ -56,9 +56,9 @@ export default function Footer() {
                   arrowColor="#075fe4"
                   arrowSize="52px"
                   showLine={false}
-                  onClick={() => {
-                    console.log("Click");
-                  }}
+                  onClick={() =>
+                    (window.location.href = "https://wa.me/08995326492")
+                  }
                 />
               </Reveal>
             </div>
@@ -67,7 +67,9 @@ export default function Footer() {
             <div>
               <Reveal>
                 <Description className="flex items-start">EMAIL ME</Description>
-                <div className="flex relative w-auto">
+              </Reveal>
+              <div className="flex relative w-auto">
+                <Reveal overflow="visible">
                   <AnimateTextArrow
                     text="dickyanthony0812@gmail.com"
                     fontSize={small ? "15px" : "19px"}
@@ -76,22 +78,22 @@ export default function Footer() {
                       (window.location = "mailto:dickyanthony0812@gmail.com")
                     }
                   />
-                </div>
-              </Reveal>
+                </Reveal>
+              </div>
             </div>
             <div>
               <Reveal>
                 <Description className="flex items-start">CALL ME</Description>
-                <div className="relative">
-                  <AnimateTextArrow
-                    text="+62 8995 - 3264 - 92"
-                    fontSize={small ? "15px" : "19px"}
-                    descriptionStyle={{ fontWeight: "bold" }}
-                    onClick={() =>
-                      (window.location.href = "https://wa.me/08995326492")
-                    }
-                  />
-                </div>
+              </Reveal>
+              <Reveal overflow="visible">
+                <AnimateTextArrow
+                  text="+62 8995 - 3264 - 92"
+                  fontSize={small ? "15px" : "19px"}
+                  descriptionStyle={{ fontWeight: "bold" }}
+                  onClick={() =>
+                    (window.location.href = "https://wa.me/08995326492")
+                  }
+                />
               </Reveal>
             </div>
           </div>

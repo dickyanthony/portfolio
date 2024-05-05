@@ -12,12 +12,14 @@ const LeftView = () => {
           {TITLE}
         </Title>
       </Reveal>
-      <Reveal>
-        <PrimaryTitle className="text-6xl mt-4 tracking-widest max-[639px]:text-2xl">
+
+      <PrimaryTitle className="text-6xl mt-4 tracking-widest max-[639px]:text-2xl">
+        <Reveal>
           <span>A </span>
           {TITLE_ROLE}
-        </PrimaryTitle>
-      </Reveal>
+        </Reveal>
+      </PrimaryTitle>
+
       <Reveal>
         <Description className="mt-10">{TITLE_DESC}</Description>
       </Reveal>
