@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Reveal, Skills, Title } from "../../component";
 import html from "../../assets/images/html.svg";
 import js from "../../assets/images/js.svg";
