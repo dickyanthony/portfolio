@@ -1,7 +1,5 @@
 # Dicky's Portofolio : Created with ReactJS, Tailwind CSS and Framer-motion🌟
 
-# Getting Started with Create React App
-
 For Demo and Final Code checkout following link👇: <br />
 [React JS Portfolio Website](https://portfolio-bf4o0tuij-dickyanthonys-projects.vercel.app/) <br />
 
@@ -10,6 +8,8 @@ For Demo and Final Code checkout following link👇: <br />
 ![ReactJS Portfolio Website](https://github.com/dickyanthony/portfolio/blob/main/src/assets/images/home-screen.png)<br />
 ![ReactJS Portfolio Website](https://github.com/dickyanthony/portfolio/blob/main/src/assets/images/experience-screen.png)<br />
 ![ReactJS Portfolio Website](https://github.com/dickyanthony/portfolio/blob/main/src/assets/images/skill-screen.png)<br />
+
+# Getting Started with Create React App
 
 ## Available Scripts
 
